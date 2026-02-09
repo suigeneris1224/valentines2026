@@ -119,6 +119,10 @@ function showDateOptions() {
 function selectOption(option) {
     const finalPage = document.getElementById('finalPage');
     finalPage.style.display = 'block';
+
+    // Update the final page with selected option
+    const selectedChoice = document.getElementById('selectedChoice');
+    selectedChoice.textContent = option;
     
     // Create sparkles effect
     createSparkles();
@@ -132,4 +136,5 @@ function selectOption(option) {
 // ===========================
 document.addEventListener('DOMContentLoaded', function() {
     createFloatingHearts();
+
 });
