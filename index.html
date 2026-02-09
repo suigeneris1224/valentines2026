@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===========================
+         FLOATING HEARTS BACKGROUND
+         =========================== -->
+    <div class="heart-bg" id="heartBg"></div>
+
+    <!-- ===========================
+         PAGE 1: VALENTINE QUESTION
+         =========================== -->
+    <div class="container">
+        <div class="heart-icon">💖</div>
+        <h1>Hey Pretty Girl!</h1>
+        <p class="message">
+            I've been thinking... and my heart keeps telling me the same thing. 
+            <br><br>
+            <strong>Will you be my Valentine? 💕</strong>
+        </p>
+        
+        <div class="button-container">
+            <button id="yesBtn" onclick="celebrate()">Yes! 💕</button>
+            <button id="noBtn">No</button>
+        </div>
+    </div>
+
+    <!-- ===========================
+         PAGE 2: CELEBRATION
+         =========================== -->
+    <div class="celebration" id="celebration">
+        <div class="celebration-content">
+            <h2>Yay! 🎉💕</h2>
+            <p>You just made me the happiest person ever!</p>
+            <p style="font-size: 3em; margin-top: 20px;">💕💖✨🎉💝</p>
+            <button class="continue-btn" onclick="showDateOptions()">Continue 💖</button>
+        </div>
+    </div>
+
+    <!-- ===========================
+         PAGE 3: DATE OPTIONS
+         =========================== -->
+    <div class="date-options" id="dateOptions">
+        <div class="date-options-container">
+            <div class="date-header">
+                <h2>Now the fun part... 💕</h2>
+                <p>Where should we spend our special day?</p>
+            </div>
+
+            <div class="options-grid">
+                <!-- Fine Dining Option -->
+                <div class="option-card" onclick="selectOption('Fine Dining')">
+                    <div class="option-images">
+                        <!--  TO ADD IMAGES: Replace the divs below with: -->
+                             <img src="https://drive.google.com/file/d/1CbJHFVKpwOzi9G1K89AohfhUObf5YjgN/view?usp=drive_link" alt="Restaurant" class="option-image">
+                             <img src="https://drive.google.com/file/d/1WjHS0KjcNXFGYyP2_WmnRfIrx6OLOjhz/view?usp=drive_link" alt="Dining" class="option-image">
+                        
+                        <div class="option-image-placeholder">🍽️</div>
+                        <div class="option-image-placeholder">🥂</div>
+                    </div>
+                    <div class="option-content">
+                        <div class="option-label">Fine Dining(Dampa)</div>
+                        <div class="option-description">
+                            Romantic dinner at a beautiful restaurant in Bogo. Candlelit ambiance, delicious food, and quality time together.
+                        </div>
+                        <div class="option-emoji">✨🍷🌹</div>
+                    </div>
+                </div>
+
+                <!-- Intimate Date Option -->
+                <div class="option-card" onclick="selectOption('Intimate Date')">
+                    <div class="option-images">
+                        <!--  TO ADD IMAGES: Replace the divs below with: -->
+                             <img src="https://drive.google.com/file/d/1Frn37BHc8obKtsGUgXwj8sPkgVPINEfd/view?usp=drive_link" alt="Plaza" class="option-image">
+                             <img src="https://drive.google.com/file/d/1zGO8aNZEW2NKW1SWCBzrCnEVx54v6tki/view?usp=drive_link" alt="Date" class="option-image">
+                        
+                        <div class="option-image-placeholder">🌙</div>
+                        <div class="option-image-placeholder">💑</div>
+                    </div>
+                    <div class="option-content">
+                        <div class="option-label">Intimate Date</div>
+                        <div class="option-description">
+                            Laroy2x sa Bogo - A cozy, intimate day or evening under the stars. Simple, sweet, and all about us.
+                        </div>
+                        <div class="option-emoji">💫🌃💕</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================
+         PAGE 4: FINAL PAGE
+         =========================== -->
+    <div class="final-page" id="finalPage">
+        <div class="sparkles" id="sparkles"></div>
+        <div class="final-container">
+            <div class="final-heart">💖</div>
+            <h2 class="final-title">Yey! 🎉</h2>
+            <p style="font-size: 1.5em; margin-bottom: 20px;">See you on our Special Day</p>
+            <div class="final-date">February 14, 2026</div>
+            <p class="final-message">I love you so much Babe!</p>
+            <div class="final-emojis">💕✨💝🌹💫</div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
